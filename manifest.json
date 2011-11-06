@@ -1,0 +1,16 @@
+{
+  "name": "Wadsworth Constant for Youtube",
+  "version": "0.1",
+  "description": "Adds the Wadsworth Constant button to youtube, allowing the user to jump to 30% of the video, where the real action is.",
+  "content_scripts" : [
+    {
+      "matches" : [ "http://www.youtube.com/*" ],
+      "js" : [ "jquery.js", "contentscript.js" ],
+      "run_at" : "document_idle",
+      "all_frames" : false
+    }
+  ],
+  "icons": { "16": "Wadsworth's Constant16px.png",
+           "48": "Wadsworth's Constant48px.png",
+          "128": "Wadsworth's Constant128px.png" }
+}
